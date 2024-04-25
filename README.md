@@ -35,7 +35,7 @@ Required Values:
 
 ## Overview
 
-In overview, this repository acts as a digestible module that allows you to create a warehouse, the warehouse role, and the warehouse grant.
+In overview, this repository acts as a digestible module that allows you to create oauth_integrations in Terraform for Snowflake.
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
