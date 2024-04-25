@@ -12,7 +12,7 @@ provider "snowflake" {}
 
 resource "snowflake_oauth_integration" "this" {
   name                         = var.name
-  comment                       = var.comment
+  comment                      = var.comment
   oauth_client                 = var.oauth_client
   enabled                      = var.enabled
   oauth_issue_refresh_tokens   = var.oauth_issue_refresh_tokens
