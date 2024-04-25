@@ -72,11 +72,9 @@ No modules.
 | <a name="input_oauth_client"></a> [oauth\_client](#input\_oauth\_client) | The OAuth client. | `string` | n/a | yes |
 | <a name="input_oauth_issue_refresh_tokens"></a> [oauth\_issue\_refresh\_tokens](#input\_oauth\_issue\_refresh\_tokens) | Flag to determine if refresh tokens should be issued. | `bool` | `true` | no |
 | <a name="input_oauth_redirect_uri"></a> [oauth\_redirect\_uri](#input\_oauth\_redirect\_uri) | n/a | `string` | `"https://example.com/callback"` | no |
-| <a name="input_oauth_refresh_token_validity"></a> [oauth\_refresh\_token\_validity](#input\_oauth\_refresh\_token\_validity) | The validity period of the OAuth refresh token. | `number` | n/a | yes |
+| <a name="input_oauth_refresh_token_validity"></a> [oauth\_refresh\_token\_validity](#input\_oauth\_refresh\_token\_validity) | The validity period of the OAuth refresh token. | `number` | `3600` | no |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| <a name="output_oauth_client_id"></a> [oauth\_client\_id](#output\_oauth\_client\_id) | n/a |
+No outputs.
 <!-- END_TF_DOCS -->
