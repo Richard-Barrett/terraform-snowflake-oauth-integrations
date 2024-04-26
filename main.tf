@@ -8,8 +8,6 @@ terraform {
   }
 }
 
-provider "snowflake" {}
-
 resource "snowflake_oauth_integration" "this" {
   name                         = var.name
   comment                      = var.comment
