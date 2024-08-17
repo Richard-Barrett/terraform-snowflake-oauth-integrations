@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-# User -> Cluster(AWS -> EKS) -> Terraform -> Helm Resources(prometheus, argo-workflows, wavefront adaptor, irythm-modules)
 # How to use this file to generate a diagram:
 # $> python3 diagram.py
 from pathlib import Path
