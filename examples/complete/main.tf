@@ -3,7 +3,7 @@ terraform {
   required_providers {
     snowflake = {
       source  = "Snowflake-Labs/snowflake"
-      version = "~> 0.89.0"
+      version = ">= 1.0.0"
     }
   }
 }
@@ -13,7 +13,8 @@ provider "snowflake" {}
 module "snowflake_oauth_integration_test" {
   source = "../../"
 
-  name         = "TEST"
-  comment      = "TEST Comment"
-  oauth_client = "TEST"
+  name               = "TEST"
+  comment            = "TEST Comment"
+  oauth_client_type  = "CONFIDENTIAL"
+  oauth_redirect_uri = "https://example.com/callback"
 }
