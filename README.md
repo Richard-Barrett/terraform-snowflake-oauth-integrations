@@ -16,12 +16,12 @@ To use the module you will need to use the following:
 
 ```hcl
 module "snowflake_oauth_integration_test" {
-  source  = "https://github.com/Richard-Barrett/terraform-snowflake-oauth-integrations"
-  version = "0.0.1"
+  source  = "git::https://github.com/Richard-Barrett/terraform-snowflake-oauth-integrations.git?ref=1.0.2"
 
-  name         = "TEST"
-  comment      = "TEST Comment"
-  oauth_client = "TEST"
+  name               = "TEST"
+  comment            = "TEST Comment"
+  oauth_client_type  = "CONFIDENTIAL"
+  oauth_redirect_uri = "https://example.com/callback"
 }
 ```
 
@@ -31,7 +31,8 @@ Required Values:
 |----------------|
 | name |
 | comment |
-| oauth_client |
+| oauth_client_type |
+| oauth_redirect_uri |
 
 ## Overview
 
