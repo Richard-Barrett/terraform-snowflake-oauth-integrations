@@ -43,13 +43,13 @@ In overview, this repository acts as a digestible module that allows you to crea
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3.6 |
-| <a name="requirement_snowflake"></a> [snowflake](#requirement\_snowflake) | ~> 0.89.0 |
+| <a name="requirement_snowflake"></a> [snowflake](#requirement\_snowflake) | >= 1.0.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_snowflake"></a> [snowflake](#provider\_snowflake) | ~> 0.89.0 |
+| <a name="provider_snowflake"></a> [snowflake](#provider\_snowflake) | >= 1.0.0 |
 
 ## Modules
 
@@ -59,7 +59,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [snowflake_oauth_integration.this](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/latest/docs/resources/oauth_integration) | resource |
+| [snowflake_oauth_integration_for_custom_clients.this](https://registry.terraform.io/providers/Snowflake-Labs/snowflake/latest/docs/resources/oauth_integration_for_custom_clients) | resource |
 
 ## Inputs
 
@@ -69,10 +69,13 @@ No modules.
 | <a name="input_comment"></a> [comment](#input\_comment) | The value of the comment field for the OAuth integration. | `string` | n/a | yes |
 | <a name="input_enabled"></a> [enabled](#input\_enabled) | Flag to enable or disable the resource. | `bool` | `true` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the OAuth integration. | `string` | n/a | yes |
-| <a name="input_oauth_client"></a> [oauth\_client](#input\_oauth\_client) | The OAuth client. | `string` | n/a | yes |
+| <a name="input_oauth_allow_non_tls_redirect_uri"></a> [oauth\_allow\_non\_tls\_redirect\_uri](#input\_oauth\_allow\_non\_tls\_redirect\_uri) | Allow non-TLS redirect URIs. | `bool` | `true` | no |
+| <a name="input_oauth_client_type"></a> [oauth\_client\_type](#input\_oauth\_client\_type) | The type of OAuth client (e.g., CONFIDENTIAL). | `string` | `"CONFIDENTIAL"` | no |
+| <a name="input_oauth_enforce_pkce"></a> [oauth\_enforce\_pkce](#input\_oauth\_enforce\_pkce) | Enforce PKCE for OAuth. | `bool` | `true` | no |
 | <a name="input_oauth_issue_refresh_tokens"></a> [oauth\_issue\_refresh\_tokens](#input\_oauth\_issue\_refresh\_tokens) | Flag to determine if refresh tokens should be issued. | `bool` | `true` | no |
-| <a name="input_oauth_redirect_uri"></a> [oauth\_redirect\_uri](#input\_oauth\_redirect\_uri) | n/a | `string` | `"https://example.com/callback"` | no |
+| <a name="input_oauth_redirect_uri"></a> [oauth\_redirect\_uri](#input\_oauth\_redirect\_uri) | The OAuth redirect URI. | `string` | `"https://example.com/callback"` | no |
 | <a name="input_oauth_refresh_token_validity"></a> [oauth\_refresh\_token\_validity](#input\_oauth\_refresh\_token\_validity) | The validity period of the OAuth refresh token. | `number` | `3600` | no |
+| <a name="input_oauth_use_secondary_roles"></a> [oauth\_use\_secondary\_roles](#input\_oauth\_use\_secondary\_roles) | Use secondary roles for OAuth. | `string` | `"NONE"` | no |
 
 ## Outputs
 
