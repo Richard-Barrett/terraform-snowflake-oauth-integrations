@@ -16,7 +16,7 @@ To use the module you will need to use the following:
 
 ```hcl
 module "snowflake_oauth_integration_test" {
-  source  = "git::https://github.com/Richard-Barrett/terraform-snowflake-oauth-integrations.git?ref=1.0.2"
+  source  = "git::https://github.com/Richard-Barrett/terraform-snowflake-oauth-integrations.git?ref=1.3.0"
 
   name               = "TEST"
   comment            = "TEST Comment"
